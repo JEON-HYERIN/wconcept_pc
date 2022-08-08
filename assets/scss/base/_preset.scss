@@ -11,14 +11,15 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
 #wrapper {
   // overflow: hidden;
-  min-width: 320px;
+  min-width: 1240px;
 }
 
 /* skip-nav */
@@ -66,4 +67,116 @@ i[class*="ico-"] {
 div[class*="inner"] {
   position: relative;
   margin: 0 auto;
+}
+
+.common-inner {
+  width: 1880px;
+}
+
+.title,
+.sub-title,
+.brand {
+  display: block;
+}
+
+.product-list-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-list {
+  margin-right: -22px;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.product-item {
+  position: relative;
+  float: left;
+  margin-bottom: 50px;
+  width: 216px;
+  margin-right: 22px;
+}
+
+
+.product-area {
+  display: block;
+  font-family: "ProximaNova-Regular", "Noto Sans KR";
+  color: #000;
+
+  .thumb-box {
+    position: relative;
+    margin-bottom: 17px;
+    overflow: hidden;
+    background: url("../images/banner/onerror_img_product.png") no-repeat center/100%;
+    height: 260px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .info-box {
+    margin-top: 17px;
+    padding: 0 4px 0 6px;
+    font-family: "Noto Sans KR";
+    color: #000;
+  }
+
+  .brand {
+    @include ellipse;
+    line-height: 14px;
+    margin-bottom: 12px;
+    padding: 3px 1px 0;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 15px;
+    color: #808080;
+    height: 15px;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    &.multiline {
+      height: 30px;
+      word-break: break-all;
+    }
+  }
+
+  .desc {
+    font-family: "ProximaNova-Regular";
+    position: relative;
+    line-height: normal;
+    margin-bottom: 14px;
+  }
+
+  .price {
+    overflow: hidden;
+    margin-top: 4px;
+    display: inline-block;
+    font-size: 12px;
+    color: #808080;
+    text-decoration: line-through;
+  }
+
+  .discount-rate {
+    float: right;
+    font-size: 16px;
+    color: #ff4000;
+  }
+
+  .discount-price {
+    font-size: 16px;
+    color: #333;
+    margin-right: 6px;
+  }
 }

@@ -30,7 +30,7 @@ html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-ad
 
 html, body { width: 100%; height: 100%; }
 
-#wrapper { min-width: 320px; }
+#wrapper { min-width: 1240px; }
 
 /* skip-nav */
 #skip-nav { position: relative; z-index: 100; }
@@ -44,6 +44,40 @@ html, body { width: 100%; height: 100%; }
 i[class^="ico-"], i[class*="ico-"] { display: inline-block; width: 25px; height: 25px; vertical-align: top; background-repeat: no-repeat; }
 
 div[class*="inner"] { position: relative; margin: 0 auto; }
+
+.common-inner { width: 1880px; }
+
+.title, .sub-title, .brand { display: block; }
+
+.product-list-wrap { width: 100%; position: relative; overflow: hidden; }
+
+.product-list { margin-right: -22px; }
+
+.product-list::after { content: ''; display: block; clear: both; }
+
+.product-item { position: relative; float: left; margin-bottom: 50px; width: 216px; margin-right: 22px; }
+
+.product-area { display: block; font-family: "ProximaNova-Regular", "Noto Sans KR"; color: #000; }
+
+.product-area .thumb-box { position: relative; margin-bottom: 17px; overflow: hidden; background: url("../images/banner/onerror_img_product.png") no-repeat center/100%; height: 260px; }
+
+.product-area .thumb-box img { display: block; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.product-area .info-box { margin-top: 17px; padding: 0 4px 0 6px; font-family: "Noto Sans KR"; color: #000; }
+
+.product-area .brand { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 14px; margin-bottom: 12px; padding: 3px 1px 0; }
+
+.product-area .title { font-size: 12px; line-height: 15px; color: #808080; height: 15px; overflow: hidden; margin-bottom: 16px; }
+
+.product-area .title.multiline { height: 30px; word-break: break-all; }
+
+.product-area .desc { font-family: "ProximaNova-Regular"; position: relative; line-height: normal; margin-bottom: 14px; }
+
+.product-area .price { overflow: hidden; margin-top: 4px; display: inline-block; font-size: 12px; color: #808080; text-decoration: line-through; }
+
+.product-area .discount-rate { float: right; font-size: 16px; color: #ff4000; }
+
+.product-area .discount-price { font-size: 16px; color: #333; margin-right: 6px; }
 
 @font-face { font-family: "ProximaNova-Thin"; font-weight: 400; src: url("../fonts/proximanova-thin-webfont.woff2"); }
 
@@ -61,11 +95,9 @@ div[class*="inner"] { position: relative; margin: 0 auto; }
 
 @font-face { font-family: "Noto Sans KR"; font-weight: 700; src: url("../fonts/NotoSansKR-Bold.woff2"); }
 
-body { -webkit-font-smoothing: antialiased; min-width: 1240px; font-family: "ProximaNova-Light","Noto Sans KR","Apple SD Gothic Neo",AppleGothic,"돋움",Dotum,Tahoma,Verdana,Geneva,Arial,Helvetica,sans-serif; font-size: 12px; font-weight: normal; }
+body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "Noto Sans KR", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; }
 
-#header .top-banner { position: relative; display: block; border-bottom: 1px solid #dbdbdb; }
-
-#header .top-banner img { vertical-align: top; width: 100%; }
+.sc-title { height: 52px; color: #333; font-family: "ProximaNova-Thin"; font-size: 48px; text-transform: uppercase; text-align: center; margin-bottom: 15px; }
 
 #header .group-flex { position: relative; width: 100%; height: 65px; background-color: #fff; }
 
@@ -95,7 +127,7 @@ body { -webkit-font-smoothing: antialiased; min-width: 1240px; font-family: "Pro
 
 #header .util-area::after { content: ''; display: block; clear: both; }
 
-#header .link-util { float: left; width: 70px; height: 65px; padding: 12px 0; color: #000; font-family: "ProximaNova-Regular","Noto Sans KR"; text-transform: uppercase; text-align: center; }
+#header .link-util { float: left; width: 70px; height: 65px; padding: 12px 0; color: #000; font-family: "ProximaNova-Regular", "Noto Sans KR"; text-transform: uppercase; text-align: center; }
 
 #header .link-util i[class^="ico-"] { display: block; margin: 0 auto 8px; }
 
@@ -121,6 +153,96 @@ body { -webkit-font-smoothing: antialiased; min-width: 1240px; font-family: "Pro
 
 #gnb .gnb-item { float: left; }
 
-#gnb .link-gnb { display: block; text-transform: uppercase; color: #fff; font-family: "ProximaNova-Bold","NotoSansKR-Medium"; font-size: 14px; padding: 29px 25px; line-height: 12px; }
+#gnb .link-gnb { display: block; text-transform: uppercase; color: #fff; font-family: "ProximaNova-Bold", "NotoSansKR-Medium"; font-size: 14px; padding: 29px 25px; line-height: 12px; }
 
 #gnb .link-gnb:hover { color: #04bd9e; }
+
+.top-banner { position: relative; display: block; border-bottom: 1px solid #dbdbdb; }
+
+.top-banner img { vertical-align: top; width: 100%; }
+
+.sc-visual { position: relative; }
+
+.sc-visual .swiper { height: 600px; }
+
+.sc-visual .swiper .swiper-pagination { bottom: 20px; }
+
+.sc-visual .swiper .swiper-pagination-bullet { margin: 0 3px; width: 10px; height: 10px; background-color: #000; opacity: .4; }
+
+.sc-visual .swiper .swiper-pagination-bullet-active { opacity: 1; }
+
+.sc-visual .swiper .btn { position: absolute; top: 50%; width: 70px; height: 96px; -webkit-transform: translateY(-50%); transform: translateY(-50%); padding: 20px; z-index: 1; }
+
+.sc-visual .swiper .btn .ico-btn { width: 30px; height: 56px; background-image: url("../images/bg/sp-bg.png"); }
+
+.sc-visual .swiper .btn-prev { left: 0; }
+
+.sc-visual .swiper .btn-prev .ico-btn { background-position: -300px -30px; }
+
+.sc-visual .swiper .btn-next { right: 0; }
+
+.sc-visual .swiper .btn-next .ico-btn { background-position: -330px -30px; }
+
+.sc-visual .swiper-slide .link-banner { display: block; }
+
+.sc-stylestory { margin-top: 100px; }
+
+.sc-stylestory .sc-title { margin-bottom: 40px; }
+
+.sc-stylestory .goods-list { margin: 0 0 0 -20px; }
+
+.sc-stylestory .goods-list::after { content: ''; display: block; clear: both; }
+
+.sc-stylestory .goods-item { float: left; width: 25%; padding-left: 20px; text-align: center; }
+
+.sc-stylestory .goods-area { display: block; }
+
+.sc-stylestory .goods-area .thumb-box img { width: 100%; }
+
+.sc-stylestory .goods-area .info-box { margin-top: 34px; }
+
+.sc-stylestory .goods-area .title { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; padding: 0 50px; color: #333; font-family: "ProximaNova-Bold", "NotoSansKR-Medium"; font-size: 20px; letter-spacing: .17em; }
+
+.sc-stylestory .goods-area .desc { height: 72px; margin: 15px 50px 37px; color: #666; font-family: "Noto Sans KR"; font-size: 12px; line-height: 1.5; word-break: keep-all; }
+
+.sc-banner { margin-top: 77px; }
+
+.sc-banner .banner-area::after { content: ''; display: block; clear: both; }
+
+.sc-banner .link-banner { float: left; width: 50%; }
+
+.sc-banner .link-banner:nth-child(1) { text-align: right; background-color: #ededed; }
+
+.sc-banner .link-banner:nth-child(2) { text-align-last: left; background-color: #fbfbfb; }
+
+.sc-whatsnew { position: relative; margin-top: 100px; }
+
+.sc-whatsnew .content { padding: 10px 0; height: 641px; position: relative; }
+
+.sc-whatsnew .product-list-wrap { width: 1712px; margin: 0 auto; }
+
+.sc-whatsnew .product-item { width: 287px; margin-right: 20px; }
+
+.sc-whatsnew .product-area .thumb-box { height: auto; }
+
+.sc-whatsnew .product-area .brand { color: #000; font-size: 16px; font-family: "ProximaNova-Bold"; }
+
+.sc-whatsnew .product-area .title { height: auto; max-height: 42px; margin-top: 3px; margin-bottom: 0; color: #555; padding: 0 1px; }
+
+.sc-whatsnew .product-area .desc { margin-top: 22px; }
+
+.sc-whatsnew .product-area .price { font-size: 14px; }
+
+.sc-whatsnew .product-area .discount-price { float: left; margin-right: 10px; font-size: 18px; }
+
+.sc-whatsnew .btn { position: absolute; top: 50%; width: 70px; height: 96px; -webkit-transform: translateY(-50%); transform: translateY(-50%); padding: 20px; z-index: 1; }
+
+.sc-whatsnew .btn .ico-btn { width: 30px; height: 56px; background-image: url("../images/bg/sp-bg.png"); }
+
+.sc-whatsnew .btn-prev { left: 0; }
+
+.sc-whatsnew .btn-prev .ico-btn { background-position: -510px -30px; }
+
+.sc-whatsnew .btn-next { right: 0; }
+
+.sc-whatsnew .btn-next .ico-btn { background-position: -540px -30px; }

@@ -1,0 +1,267 @@
+// top-banner
+.top-banner {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #dbdbdb;
+
+  img {
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+// visual
+.sc-visual {
+  position: relative;
+
+  .content {}
+
+  .swiper {
+    height: 600px;
+
+    .swiper-pagination {
+      bottom: 20px;
+
+      &-bullet {
+        margin: 0 3px;
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        opacity: .4;
+
+        &-active {
+          opacity: 1;
+        }
+      }
+    }
+
+    .btn {
+      position: absolute;
+      top: 50%;
+      width: 70px;
+      height: 96px;
+      transform: translateY(-50%);
+      padding: 20px;
+      z-index: 1;
+
+      .ico-btn {
+        width: 30px;
+        height: 56px;
+        background-image: url("../images/bg/sp-bg.png");
+      }
+    }
+
+    .btn-prev {
+      left: 0;
+
+      .ico-btn {
+        background-position: -300px -30px;
+      }
+    }
+
+    .btn-next {
+      right: 0;
+
+      .ico-btn {
+        background-position: -330px -30px;
+      }
+    }
+  }
+
+  .swiper-slide {
+    .link-banner {
+      display: block;
+    }
+
+    img {}
+  }
+}
+
+// stylestory
+.sc-stylestory {
+  margin-top: 100px;
+
+  .sc-title {
+    margin-bottom: 40px;
+  }
+
+  .goods-list {
+    margin: 0 0 0 -20px;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .goods-item {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .goods-area {
+    display: block;
+
+    .thumb-box {
+      img {
+        width: 100%;
+      }
+    }
+
+    .info-box {
+      margin-top: 34px;
+    }
+
+    .title {
+      @include ellipse;
+      display: block;
+      padding: 0 50px;
+      color: #333;
+      font-family: "ProximaNova-Bold", "NotoSansKR-Medium";
+      font-size: 20px;
+      letter-spacing: .17em;
+    }
+
+    .desc {
+      height: 72px;
+      margin: 15px 50px 37px;
+      color: #666;
+      font-family: "Noto Sans KR";
+      font-size: 12px;
+      line-height: 1.5;
+      word-break: keep-all;
+    }
+  }
+}
+
+// banner
+.sc-banner {
+  margin-top: 77px;
+
+  .banner-area {
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .link-banner {
+    float: left;
+    width: 50%;
+
+    &:nth-child(1) {
+      text-align: right;
+      background-color: #ededed
+    }
+
+    &:nth-child(2) {
+      text-align-last: left;
+      background-color: #fbfbfb
+    }
+
+    img {}
+  }
+}
+
+// whatsnew
+.sc-whatsnew {
+  position: relative;
+  margin-top: 100px;
+
+  .content {
+    padding: 10px 0;
+    height: 641px;
+    position: relative;
+  }
+
+  .product-list-wrap {
+    width: 1712px;
+    margin: 0 auto;
+  }
+
+  .product-list {}
+
+  .product-item {
+    width: 287px;
+    margin-right: 20px;
+  }
+
+  .product-area {
+
+
+    .thumb-box {
+      height: auto;
+
+      img {}
+    }
+
+    .info-box {}
+
+    .brand {
+      color: #000;
+      font-size: 16px;
+      font-family: "ProximaNova-Bold";
+    }
+
+    .title {
+      height: auto;
+      max-height: 42px;
+      margin-top: 3px;
+      margin-bottom: 0;
+      color: #555;
+      padding: 0 1px;
+    }
+
+    .desc {
+      margin-top: 22px;
+    }
+
+    .price {
+      font-size: 14px;
+    }
+
+    .discount-rate {}
+
+    .discount-price {
+      float: left;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 96px;
+    transform: translateY(-50%);
+    padding: 20px;
+    z-index: 1;
+
+    .ico-btn {
+      width: 30px;
+      height: 56px;
+      background-image: url("../images/bg/sp-bg.png");
+    }
+  }
+
+  .btn-prev {
+    left: 0;
+
+    .ico-btn {
+      background-position: -510px -30px;
+    }
+  }
+
+  .btn-next {
+    right: 0;
+
+    .ico-btn {
+      background-position: -540px -30px;
+    }
+  }
+}
