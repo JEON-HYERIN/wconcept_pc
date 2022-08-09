@@ -18,7 +18,7 @@ body {
 }
 
 #wrapper {
-  // overflow: hidden;
+  overflow: hidden;
   min-width: 1240px;
 }
 
@@ -103,7 +103,6 @@ div[class*="inner"] {
   margin-right: 22px;
 }
 
-
 .product-area {
   display: block;
   font-family: "ProximaNova-Regular", "Noto Sans KR";
@@ -138,6 +137,13 @@ div[class*="inner"] {
     padding: 3px 1px 0;
   }
 
+  .sub-title {
+    @include ellipse;
+    line-height: 14px;
+    margin-bottom: 12px;
+    padding-top: 3px;
+  }
+
   .title {
     font-size: 12px;
     line-height: 15px;
@@ -157,6 +163,12 @@ div[class*="inner"] {
     position: relative;
     line-height: normal;
     margin-bottom: 14px;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
   }
 
   .price {
@@ -175,8 +187,46 @@ div[class*="inner"] {
   }
 
   .discount-price {
+    float: left;
     font-size: 16px;
     color: #333;
     margin-right: 6px;
   }
+
+  .badge,
+  .reservation-badge {
+    display: inline-block;
+    line-height: 14px;
+    padding: 2px 5px;
+    position: relative;
+  }
+  .reservation-badge {
+    min-width: 52px;
+    background: #000;
+    color: #fff;
+    width: auto;
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .badge {
+    background: #fff;
+    color: #888;
+    width: auto;
+    text-indent: initial;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 30px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #959595;
+    }
+  }
 }
+

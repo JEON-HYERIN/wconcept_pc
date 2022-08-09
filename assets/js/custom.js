@@ -7,8 +7,8 @@ $(function(){
       clickable: true,
     },
     navigation: {
-      nextEl: '.sc-visual .btn-prev',
-      prevEl: '.sc-visual .btn-next',
+      prevEl: '.sc-visual .btn-prev',
+      nextEl: '.sc-visual .btn-next',
     },
   });
   const whatsnewSwiper = new Swiper('.sc-whatsnew .swiper', {
@@ -17,8 +17,19 @@ $(function(){
     // },
     loop: true,
     navigation: {
-      nextEl: '.sc-whatsnew .btn-prev',
-      prevEl: '.sc-whatsnew .btn-next',
+      prevEl: '.sc-whatsnew .btn-prev',
+      nextEl: '.sc-whatsnew .btn-next',
+    },
+    slidesPerView: 'auto',
+  });
+  const makeityoursSwiper = new Swiper('.sc-makeityours .swiper', {
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    loop: true,
+    navigation: {
+      prevEl: '.sc-makeityours .btn-prev',
+      nextEl: '.sc-makeityours .btn-next',
     },
     slidesPerView: 'auto',
   });
