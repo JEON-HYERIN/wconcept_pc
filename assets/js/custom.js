@@ -61,3 +61,17 @@ $(function(){
     },
   });
 });
+const wconceptTVSwiper = new Swiper('.sc-wconceptTV .swiper', {
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  loop: true,
+  speed: 500,
+  autoHeight: true,
+  navigation: {
+    prevEl: '.sc-wconceptTV .btn-prev',
+    nextEl: '.sc-wconceptTV .btn-next',
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true
+});

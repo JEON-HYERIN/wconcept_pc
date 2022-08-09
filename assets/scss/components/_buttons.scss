@@ -1,14 +1,14 @@
 .swiper {
   .swiper-pagination {
     bottom: 20px;
-  
+
     &-bullet {
       margin: 0 3px;
       width: 10px;
       height: 10px;
       background-color: #000;
       opacity: .4;
-  
+
       &-active {
         opacity: 1;
       }
@@ -28,6 +28,27 @@
   .ico-btn {
     width: 30px;
     height: 56px;
+  }
+}
+
+.btn-prev {
+
+  .ico-btn {
+    background-position: -300px -30px;
+  }
+  .ico-btn2 {
+    background-position: -510px -30px;
+  }
+}
+
+.btn-next {
+
+  .ico-btn {
+    background-position: -330px -30px;
+  }
+
+  .ico-btn2 {
+    background-position: -540px -30px;
   }
 }
 
@@ -61,13 +82,14 @@
     margin-left: 15px;
     margin-top: -5px;
     vertical-align: middle;
+
     &::before,
     &::after {
       content: '';
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       background-color: #000;
     }
 
@@ -75,6 +97,7 @@
       width: 1px;
       height: 35px;
     }
+
     &::after {
       width: 35px;
       height: 1px;

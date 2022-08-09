@@ -17,6 +17,10 @@ body {
   height: 100%;
 }
 
+iframe {
+  border: none;
+}
+
 #wrapper {
   overflow: hidden;
   min-width: 1240px;
@@ -194,7 +198,7 @@ div[class*="inner"] {
     color: #333;
     margin-right: 6px;
   }
-  
+
   .badge-wrap {
     display: flex;
     flex-direction: column;
@@ -214,6 +218,7 @@ div[class*="inner"] {
     margin-right: 5px;
     margin-bottom: 5px;
   }
+
   .reservation-badge {
     min-width: 52px;
     background: #000;
@@ -222,6 +227,7 @@ div[class*="inner"] {
     font-size: 11px;
     line-height: 14px;
   }
+
   .badge {
     background: #fff;
     color: #888;
@@ -244,3 +250,8 @@ div[class*="inner"] {
   }
 }
 
+.sc-wconceptTV .event-area .view::after {
+  background-image: url("../images/bg/sp-bg2.png");
+  background-repeat: no-repeat;
+  background-size: 600px 600px;
+}
