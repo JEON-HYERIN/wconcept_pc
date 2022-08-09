@@ -422,3 +422,39 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 .sc-wconceptTV .event-area .view { display: inline-block; position: absolute; bottom: 0; left: 0; z-index: 1; padding: 0 3px; font-family: "ProximaNova-Light"; font-size: 12px; text-transform: uppercase; border-bottom: 1px solid #666; color: #808080; }
 
 .sc-wconceptTV .event-area .view::after { display: inline-block; content: ''; width: 4px; height: 5px; margin: -2px 0 0 6px; background-position: -180px 0; vertical-align: middle; }
+
+.sc-banner2 { position: relative; margin-top: 100px; }
+
+.sc-banner2 .banner-area { display: block; height: 450px; background-position: 50% 50%; background-repeat: no-repeat; text-align: center; }
+
+.sc-banner2 .banner-area.slide1 { background-image: url("../images/banner/banner2_img1.jpg"); }
+
+.sc-banner2 .banner-area.slide2 { background-image: url("../images/banner/banner2_img2.jpg"); }
+
+.sc-banner2 .banner-area .caption-box { position: absolute; top: 50%; left: 0; z-index: 3; width: 100%; font-family: "ProximaNova-Regular", "Noto Sans KR"; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.sc-banner2 .banner-area .title { color: #333; font-size: 48px; line-height: 1.55; }
+
+.sc-banner2 .banner-area .sub-desc { display: inline-block; min-width: 180px; height: 50px; text-align: center; line-height: 48px; border: 1px solid #333; color: #000; font-family: "NotoSansKR-Medium"; font-size: 14px; margin-top: 35px; padding: 0 46px; border-width: 2px; background: transparent; }
+
+.sc-trend { margin-top: 120px; }
+
+.sc-trend .inner { width: 1890px; }
+
+.sc-trend .group-flex { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.sc-trend .group-flex .column-left { text-align: right; width: 190px; margin-right: 52px; line-height: 50px; }
+
+.sc-trend .category-area { display: block; height: 445px; }
+
+.sc-trend .category-area .title { margin-top: -6px; font-family: "ProximaNova-Thin"; font-size: 50px; display: block; text-transform: uppercase; margin-bottom: 15px; }
+
+.sc-trend .category-area .more { font-family: "ProximaNova-Regular"; font-size: 16px; color: #666; }
+
+.sc-trend .category-area .more::after { content: '▶'; color: #858585; line-height: 12px; font-size: 12px; margin-left: 3px; }
+
+.sc-trend .product-area .thumb-box { height: 288px; }
+
+.sc-trend .product-area .info-box { height: 186px; }
+
+.sc-trend .product-area .title-wrap { height: 98px; }
