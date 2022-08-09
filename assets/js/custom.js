@@ -46,4 +46,18 @@ $(function(){
     slidesPerView: 'auto',
     centeredSlides: true
   });
+  const beautypickSwiper = new Swiper('.sc-beautypick .swiper', {
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    loop: true,
+    pagination: {
+      el: '.sc-beautypick .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      prevEl: '.sc-beautypick .btn-prev',
+      nextEl: '.sc-beautypick .btn-next',
+    },
+  });
 });

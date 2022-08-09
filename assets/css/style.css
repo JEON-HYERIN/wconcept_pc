@@ -63,7 +63,7 @@ div[class*="inner"] { position: relative; margin: 0 auto; }
 
 .product-area .thumb-box img { display: block; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
-.product-area .info-box { margin-top: 17px; padding: 0 4px 0 6px; font-family: "Noto Sans KR"; color: #000; }
+.product-area .info-box { padding: 0 4px 0 6px; font-family: "Noto Sans KR"; color: #000; }
 
 .product-area .brand { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 14px; line-height: normal; margin-bottom: 7px; font-family: "NotoSansKR-Medium"; max-height: 28px; letter-spacing: .7px; }
 
@@ -175,6 +175,12 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 #gnb .link-gnb:hover { color: #04bd9e; }
 
+.swiper .swiper-pagination { bottom: 20px; }
+
+.swiper .swiper-pagination-bullet { margin: 0 3px; width: 10px; height: 10px; background-color: #000; opacity: .4; }
+
+.swiper .swiper-pagination-bullet-active { opacity: 1; }
+
 .btn-nav { position: absolute; top: 50%; width: 70px; height: 96px; -webkit-transform: translateY(-50%); transform: translateY(-50%); padding: 20px; z-index: 1; }
 
 .btn-nav .ico-btn { width: 30px; height: 56px; }
@@ -200,12 +206,6 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 .sc-visual { position: relative; }
 
 .sc-visual .swiper { height: 600px; }
-
-.sc-visual .swiper .swiper-pagination { bottom: 20px; }
-
-.sc-visual .swiper .swiper-pagination-bullet { margin: 0 3px; width: 10px; height: 10px; background-color: #000; opacity: .4; }
-
-.sc-visual .swiper .swiper-pagination-bullet-active { opacity: 1; }
 
 .sc-visual .swiper .btn-prev { left: 0; }
 
@@ -338,3 +338,49 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 .sc-exclusive .product-area .info-box { height: 186px; }
 
 .sc-exclusive .product-area .title-wrap { height: 98px; }
+
+.sc-beautypick .sc-title { margin-bottom: 30px; }
+
+.sc-beautypick .group-flex { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.sc-beautypick .group-flex .column-left { width: 752px; }
+
+.sc-beautypick .group-flex .column-right { width: 1080px; }
+
+.sc-beautypick .beauty-area { display: block; }
+
+.sc-beautypick .beauty-area .caption-box { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
+
+.sc-beautypick .beauty-area .title { padding-bottom: 25px; line-height: 100%; font-family: "ProximaNova-Semibold","NotoSansKR-Medium"; font-size: 60px; color: #fff; }
+
+.sc-beautypick .beauty-area .desc { padding-bottom: 30px; font-family: "Noto Sans KR"; font-size: 18px; color: #fff; line-height: 1.6; }
+
+.sc-beautypick .beauty-area .sub-desc { display: inline-block; line-height: 50px; padding: 0 28px; font-family: "Noto Sans KR"; font-size: 16px; color: #fff; border: 1px solid #fff; }
+
+.sc-beautypick .btn-prev { left: 0; }
+
+.sc-beautypick .btn-prev .ico-btn { background-position: -300px -30px; }
+
+.sc-beautypick .btn-next { right: 0; }
+
+.sc-beautypick .btn-next .ico-btn { background-position: -330px -30px; }
+
+.sc-beautypick .product-list { margin: -10px; }
+
+.sc-beautypick .product-item { width: 200px; margin: 10px; }
+
+.sc-beautypick .product-item:nth-child(n+6) { margin-top: 20px; }
+
+.sc-beautypick .product-area .thumb-box { margin-bottom: 12px; height: 266px; }
+
+.sc-beautypick .product-area .info-box { overflow: hidden; height: 127px; }
+
+.sc-beautypick .product-area .sub-title { margin-bottom: 5px; }
+
+.sc-beautypick .product-area .title { -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; margin-bottom: 5px; }
+
+.sc-beautypick .product-area .desc { margin-bottom: 0; line-height: 18px; }
+
+.sc-beautypick .product-area .price { margin-top: 0; }
+
+.sc-beautypick .product-area .badge { margin-top: 6px; }
