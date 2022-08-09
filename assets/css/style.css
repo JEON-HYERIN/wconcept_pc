@@ -65,7 +65,7 @@ div[class*="inner"] { position: relative; margin: 0 auto; }
 
 .product-area .info-box { margin-top: 17px; padding: 0 4px 0 6px; font-family: "Noto Sans KR"; color: #000; }
 
-.product-area .brand { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 14px; margin-bottom: 12px; padding: 3px 1px 0; }
+.product-area .brand { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 14px; line-height: normal; margin-bottom: 7px; font-family: "NotoSansKR-Medium"; max-height: 28px; letter-spacing: .7px; }
 
 .product-area .sub-title { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 14px; margin-bottom: 12px; padding-top: 3px; }
 
@@ -83,7 +83,11 @@ div[class*="inner"] { position: relative; margin: 0 auto; }
 
 .product-area .discount-price { float: left; font-size: 16px; color: #333; margin-right: 6px; }
 
-.product-area .badge, .product-area .reservation-badge { display: inline-block; line-height: 14px; padding: 2px 5px; position: relative; }
+.product-area .badge-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.product-area .badge-wrap.flex { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+.product-area .badge, .product-area .reservation-badge { display: inline-block; line-height: 14px; padding: 2px 5px; position: relative; margin-right: 5px; margin-bottom: 5px; }
 
 .product-area .reservation-badge { min-width: 52px; background: #000; color: #fff; width: auto; font-size: 11px; line-height: 14px; }
 
@@ -100,6 +104,8 @@ div[class*="inner"] { position: relative; margin: 0 auto; }
 @font-face { font-family: "ProximaNova-Semibold"; font-weight: 500; src: url("../fonts/proximanova-semibold-webfont.woff2"); }
 
 @font-face { font-family: "ProximaNova-Bold"; font-weight: 400; src: url("../fonts/proximanova-bold-webfont.woff2"); }
+
+@font-face { font-family: "ProximaNova-Extrabold"; font-weight: 400; src: url("../fonts/proximanova-extrabold-webfont.woff2"); }
 
 @font-face { font-family: "Noto Sans KR"; font-weight: 400; src: url("../fonts/NotoSansKR-Regular.woff2"); }
 
@@ -173,11 +179,19 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 .btn-nav .ico-btn { width: 30px; height: 56px; }
 
-.btn-nav .ico-btn, .sc-makeityours .product-area .ico-heart { background-image: url("../images/bg/sp-bg.png"); background-repeat: no-repeat; background-size: 600px 600px; }
+.btn-nav .ico-btn, .ico-heart { background-image: url("../images/bg/sp-bg.png"); background-repeat: no-repeat; background-size: 600px 600px; }
 
 .btn-heart { position: absolute; top: 10px; right: 10px; z-index: 3; cursor: pointer; }
 
-.ico-heart { width: 18px; height: 17px; background-position: -330px 0; }
+.btn-heart .ico-heart { width: 18px; height: 17px; background-position: -330px 0; }
+
+.sc-title .link-more { display: inline-block; position: relative; width: 33px; height: 33px; margin-left: 15px; margin-top: -5px; vertical-align: middle; }
+
+.sc-title .link-more::before, .sc-title .link-more::after { content: ''; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #000; }
+
+.sc-title .link-more::before { width: 1px; height: 35px; }
+
+.sc-title .link-more::after { width: 35px; height: 1px; }
 
 .top-banner { position: relative; display: block; border-bottom: 1px solid #dbdbdb; }
 
@@ -243,7 +257,7 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 .sc-whatsnew .product-area .thumb-box { height: auto; }
 
-.sc-whatsnew .product-area .brand { color: #000; font-size: 16px; font-family: "ProximaNova-Bold"; }
+.sc-whatsnew .product-area .brand { color: #000; font-size: 16px; font-family: "ProximaNova-Bold"; line-height: 14px; margin-bottom: 12px; padding: 3px 1px 0; letter-spacing: normal; }
 
 .sc-whatsnew .product-area .title { height: auto; max-height: 42px; margin-top: 3px; margin-bottom: 0; color: #555; padding: 0 1px; }
 
@@ -275,8 +289,6 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 .sc-makeityours .product-area .thumb-box { height: 310px; }
 
-.sc-makeityours .product-area .brand { line-height: normal; margin-bottom: 7px; font-family: "NotoSansKR-Medium"; max-height: 28px; letter-spacing: .7px; }
-
 .sc-makeityours .btn-nav { -webkit-transform: translateY(-70%); transform: translateY(-70%); }
 
 .sc-makeityours .btn-prev { left: -20px; }
@@ -286,3 +298,43 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 .sc-makeityours .btn-next { right: -20px; }
 
 .sc-makeityours .btn-next .ico-btn { background-position: -540px -30px; }
+
+.sc-exclusive { position: relative; margin-top: 100px; overflow: hidden; }
+
+.sc-exclusive .sc-title { margin-bottom: 30px; }
+
+.sc-exclusive .exclusive-list-wrap { margin-bottom: 120px; }
+
+.sc-exclusive .swiper-slide { width: 1030px; -webkit-transform: scale(0.92); transform: scale(0.92); -webkit-transition: -webkit-transform .5s ease-in-out; transition: -webkit-transform .5s ease-in-out; transition: transform .5s ease-in-out; transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out; }
+
+.sc-exclusive .swiper-slide .exclusive-area::after { content: ''; position: absolute; top: 0; bottom: 0; right: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); -webkit-transition: background-color .5s ease-in-out; transition: background-color .5s ease-in-out; }
+
+.sc-exclusive .swiper-slide-active { -webkit-transform: scale(1); transform: scale(1); }
+
+.sc-exclusive .swiper-slide-active .exclusive-area::after { background-color: rgba(0, 0, 0, 0); }
+
+.sc-exclusive .exclusive-area { position: relative; display: block; }
+
+.sc-exclusive .exclusive-area .thumb-box img { width: 100%; }
+
+.sc-exclusive .exclusive-area .title { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-family: "ProximaNova-Extrabold"; font-size: 78px; line-height: 90px; color: #fff; text-align: center; }
+
+.sc-exclusive .exclusive-area .desc { position: absolute; top: 30px; left: 30px; z-index: 2; font-family: "ProximaNova-Bold","NotoSansKR-Medium"; font-size: 15px; line-height: 19px; color: #fff; }
+
+.sc-exclusive .btn-prev { left: 300px; }
+
+.sc-exclusive .btn-prev .ico-btn { background-position: -300px -30px; }
+
+.sc-exclusive .btn-next { right: 300px; }
+
+.sc-exclusive .btn-next .ico-btn { background-position: -330px -30px; }
+
+.sc-exclusive .product-list-wrap { width: 100%; position: relative; overflow: hidden; }
+
+.sc-exclusive .product-item:nth-child(7n), .sc-exclusive .product-item:nth-child(8n) { margin-right: 21px; }
+
+.sc-exclusive .product-area .thumb-box { height: 288px; }
+
+.sc-exclusive .product-area .info-box { height: 186px; }
+
+.sc-exclusive .product-area .title-wrap { height: 98px; }

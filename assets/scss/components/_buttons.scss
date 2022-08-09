@@ -14,7 +14,7 @@
 }
 
 .btn-nav .ico-btn,
-.sc-makeityours .product-area .ico-heart {
+.ico-heart {
   background-image: url("../images/bg/sp-bg.png");
   background-repeat: no-repeat;
   background-size: 600px 600px;
@@ -26,9 +26,40 @@
   right: 10px;
   z-index: 3;
   cursor: pointer;
+
+  .ico-heart {
+    width: 18px;
+    height: 17px;
+    background-position: -330px 0;
+  }
 }
-.ico-heart {
-  width: 18px;
-  height: 17px;
-  background-position: -330px 0;
+
+.sc-title {
+  .link-more {
+    display: inline-block;
+    position: relative;
+    width: 33px;
+    height: 33px;
+    margin-left: 15px;
+    margin-top: -5px;
+    vertical-align: middle;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #000;
+    }
+
+    &::before {
+      width: 1px;
+      height: 35px;
+    }
+    &::after {
+      width: 35px;
+      height: 1px;
+    }
+  }
 }

@@ -33,4 +33,17 @@ $(function(){
     },
     slidesPerView: 'auto',
   });
+  const exclusiveSwiper = new Swiper('.sc-exclusive .swiper', {
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    loop: true,
+    speed: 500,
+    navigation: {
+      prevEl: '.sc-exclusive .btn-prev',
+      nextEl: '.sc-exclusive .btn-next',
+    },
+    slidesPerView: 'auto',
+    centeredSlides: true
+  });
 });

@@ -190,6 +190,10 @@
       color: #000;
       font-size: 16px;
       font-family: "ProximaNova-Bold";
+      line-height: 14px;
+      margin-bottom: 12px;
+      padding: 3px 1px 0;
+      letter-spacing: normal;
     }
 
     .title {
@@ -264,11 +268,6 @@
 
     .info-box {}
     .brand {
-      line-height: normal;
-      margin-bottom: 7px;
-      font-family: "NotoSansKR-Medium";
-      max-height: 28px;
-      letter-spacing: .7px;
     }
   }
   .btn-nav {
@@ -287,5 +286,129 @@
     .ico-btn {
       background-position: -540px -30px;
     }
+  }
+}
+
+// exclusive
+.sc-exclusive {
+  position: relative;
+  margin-top: 100px;
+  overflow: hidden;
+  .sc-title {
+    margin-bottom: 30px;
+  }
+  .content {}
+  .exclusive-list-wrap {
+    margin-bottom: 120px;
+  }
+  .exclusive-list {}
+  .exclusive-item {
+
+  }
+  .swiper-slide {
+    width: 1030px;
+    transform: scale(.92);
+    transition: transform .5s ease-in-out;
+    
+    .exclusive-area::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0,0,0,.5);
+      transition: background-color .5s ease-in-out;
+    }
+  }
+  .swiper-slide-active {
+    transform: scale(1);
+
+    .exclusive-area::after {
+      background-color: rgba(0,0,0,0);
+    }
+  }
+  .exclusive-area {
+    position: relative;
+    display: block;
+    .thumb-box {
+      img {
+        width: 100%;
+      }
+    }
+
+    .caption-box {}
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-family: "ProximaNova-Extrabold";
+      font-size: 78px;
+      line-height: 90px;
+      color: #fff;
+      text-align: center;
+    }
+    .desc {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      z-index: 2;
+      font-family: "ProximaNova-Bold","NotoSansKR-Medium";
+      font-size: 15px;
+      line-height: 19px;
+      color: #fff;
+    }
+  }
+  .btn-nav {
+    .ico-btn {}
+  }
+  .btn-prev {
+    left: 300px;
+    .ico-btn {
+      background-position: -300px -30px;
+    }
+  }
+  .btn-next {
+    right: 300px;
+    .ico-btn {
+      background-position: -330px -30px;
+    }
+  }
+  .product-list-wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-list {}
+  .product-item {
+    &:nth-child(7n),
+    &:nth-child(8n) {
+      margin-right: 21px;
+    }
+  }
+  .product-area {
+    .thumb-box {
+      height: 288px;
+      img {}
+    }
+    .btn-heart {
+      .ico-heart {}
+    }
+    .info-box {
+      height: 186px;
+    }
+    .title-wrap {
+      height: 98px;
+    }
+    .brand {
+
+    }
+    .sub-title {}
+    .title {}
+    .price {}
+    .discount-rate {}
+    .discount-price {}
+    .badge {}
   }
 }
