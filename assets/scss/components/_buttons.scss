@@ -36,6 +36,7 @@
   .ico-btn {
     background-position: -300px -30px;
   }
+
   .ico-btn2 {
     background-position: -510px -30px;
   }
@@ -101,6 +102,30 @@
     &::after {
       width: 35px;
       height: 1px;
+    }
+  }
+}
+
+.btn-category {
+  display: block;
+  height: 26px;
+  padding: 0 20px;
+
+  span {
+    position: relative;
+    display: block;
+    height: 100%;
+    font-family: "ProximaNova-Semibold";
+    font-size: 16px;
+    color: #b5b5b5;
+    border-bottom: 3px solid transparent;
+    transition: all ease-in-out .2s;
+  }
+
+  &.active {
+    span {
+      color: #333;
+      border-bottom-color: #000;
     }
   }
 }

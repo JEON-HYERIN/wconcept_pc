@@ -85,5 +85,40 @@ $(function(){
       nextEl: '.sc-banner2 .btn-next',
     },
   });
+  var designersbullet = ['FAYEWOO', 'MAISONMARAIS', 'DEAR MY DEER', 'Lemme', 'VERUTUM'];
+  const designersSwiper = new Swiper('.sc-designers .swiper', {
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    loop: true,
+    speed: 500,
+    autoHeight: true,
+    navigation: {
+      prevEl: '.sc-designers .btn-prev',
+      nextEl: '.sc-designers .btn-next',
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    centeredSlides: true,
+    pagination: {
+      el: '.sc-designers .category-area',
+      clickable: true,
+      bulletClass: 'btn-category',
+      bulletActiveClass: 'active',
+      bulletElement: 'a',
+      renderBullet: function (index, className) {
+        return '<a href="#" class="' + className + '" role="tab">' + '<span>' + (designersbullet[index]) + '</span>' + '</a>';
+      }
+    },
+  });
+  // wdnastyle
+  $('.sc-wdnastyle .btn-category').click(function(e){
+    e.preventDefault();
+    const dataType=$(this).data('type');
+
+    $('.sc-wdnastyle .btn-category').removeClass('active');
+    $(this).addClass('active');
+    $(dataType).addClass('visible').siblings('.wdnastyle-list').removeClass('visible');
+  });
 });
 
