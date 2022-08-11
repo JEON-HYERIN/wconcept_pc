@@ -111,6 +111,7 @@ $(function(){
       }
     },
   });
+
   // wdnastyle
   $('.sc-wdnastyle .btn-category').click(function(e){
     e.preventDefault();
@@ -119,6 +120,15 @@ $(function(){
     $('.sc-wdnastyle .btn-category').removeClass('active');
     $(this).addClass('active');
     $(dataType).addClass('visible').siblings('.wdnastyle-list').removeClass('visible');
+  });
+
+  // news
+  $('.sc-board .btn-tab').hover(function(){
+    const dataType=$(this).data('type');
+
+    $('.sc-board .btn-tab').removeClass('active');
+    $(this).addClass('active');
+    $(dataType).addClass('visible').siblings('.board-list').removeClass('visible');
   });
 });
 

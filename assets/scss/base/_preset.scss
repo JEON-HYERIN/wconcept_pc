@@ -77,6 +77,10 @@ div[class*="inner"] {
   width: 1880px;
 }
 
+.inner1 {
+  width: 1240px;
+}
+
 .title,
 .sub-title,
 .brand {
@@ -251,7 +255,9 @@ div[class*="inner"] {
 }
 
 .sc-wconceptTV .event-area .view::after {
-  background-image: url("../images/bg/sp-bg2.png");
-  background-repeat: no-repeat;
-  background-size: 600px 600px;
+  background: {
+    image: url("../images/bg/sp-bg2.png");
+    repeat: no-repeat;
+    size: 600px 600px;
+  }
 }
