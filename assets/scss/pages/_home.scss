@@ -945,6 +945,7 @@
 
 // inner1
 .inner1 {
+  width: 1240px;
   padding-top: 90px;
 
   .group-flex {
@@ -989,7 +990,6 @@
 // board
 .sc-board {
   .group-tab {
-    padding-bottom: 20px;
     border-bottom: 2px solid #000;
 
     &::after {
@@ -1011,7 +1011,8 @@
 
   .btn-tab {
     float: left;
-    padding-right: 33px;
+    padding: 0 33px 20px 0;
+    line-height: normal;
     font-size: 22px;
     color: #a3a3a3;
     text-transform: uppercase;
@@ -1026,6 +1027,7 @@
     position: relative;
     padding: 10px;
     box-sizing: content-box;
+    margin-right: -10px;
 
     &::after {
       content: '';

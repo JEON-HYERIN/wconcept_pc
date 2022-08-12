@@ -49,8 +49,6 @@ div[class*="inner"] { position: relative; margin: 0 auto; }
 
 .common-inner { width: 1880px; }
 
-.inner1 { width: 1240px; }
-
 .title, .sub-title, .brand { display: block; }
 
 .product-list-wrap { width: 100%; position: relative; overflow: hidden; }
@@ -182,6 +180,44 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 #gnb .link-gnb { display: block; text-transform: uppercase; color: #fff; font-family: "ProximaNova-Bold", "NotoSansKR-Medium"; font-size: 14px; padding: 29px 25px; line-height: 12px; }
 
 #gnb .link-gnb:hover { color: #04bd9e; }
+
+#footer { margin-top: 70px; }
+
+#footer .inner { width: 1240px; }
+
+#footer .link-foot { display: inline-block; min-width: 60px; padding: 0 8px; height: 20px; line-height: 18px; font-family: "Noto Sans KR"; font-size: 12px; color: #000; border: 1px solid #333; background-color: #fff; text-align: center; }
+
+#footer .corp-list-wrap { background: #848484; }
+
+#footer .corp-list { padding: 0 28px; }
+
+#footer .corp-list::after { content: ''; display: block; clear: both; }
+
+#footer .corp-item { float: left; }
+
+#footer .link-corp { display: block; color: #fff; font-size: 14px; line-height: 57px; padding: 0 44px; }
+
+#footer .link-corp strong { font-family: "ProximaNova-Semibold","NotoSansKR-Medium"; }
+
+#footer .link-corp.en { font-size: 15px; font-family: "ProximaNova-Regular"; }
+
+#footer .group-address { padding-top: 40px; color: #666; line-height: 20px; font-family: "Noto Sans KR"; margin-bottom: 17px; }
+
+#footer .group-address::after { content: ''; display: block; clear: both; }
+
+#footer .address-area { float: left; }
+
+#footer .service-area { position: relative; float: right; letter-spacing: -.5px; }
+
+#footer .service-area::before { content: ''; position: absolute; top: 0; bottom: 0; left: -20px; margin: auto; width: 1px; height: 87px; background: #e5e5e5; }
+
+#footer .service-area .title { font-family: "NotoSansKR-Medium"; line-height: 18px; font-size: 12px; color: #000; }
+
+#footer .service-area .desc { font-family: "Noto Sans KR"; color: #666; line-height: 18px; margin-bottom: 14px; }
+
+#footer .service-area .remark { display: inline-block; color: #666; font-family: "Noto Sans KR"; line-height: 18px; }
+
+#footer .service-area .link-foot { font-size: 11px; margin-left: 5px; margin-top: -2px; }
 
 .swiper .swiper-pagination { bottom: 20px; }
 
@@ -527,7 +563,7 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 .sc-wdnastyle .wdnastyle-item .btn-like .ico-like { display: inline-block; position: relative; width: 16px; height: 16px; margin-top: -1px; cursor: pointer; vertical-align: middle; background-image: url("../images/icon/ico_like.png"); background-position: center; background-size: 100%; }
 
-.inner1 { padding-top: 90px; }
+.inner1 { width: 1240px; padding-top: 90px; }
 
 .inner1 .group-flex::after { content: ''; display: block; clear: both; }
 
@@ -541,7 +577,7 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 .sc-banner3 .link-banner { float: left; }
 
-.sc-board .group-tab { padding-bottom: 20px; border-bottom: 2px solid #000; }
+.sc-board .group-tab { border-bottom: 2px solid #000; }
 
 .sc-board .group-tab::after { content: ''; display: block; clear: both; }
 
@@ -549,11 +585,11 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 .sc-board .tab-area::after { content: ''; display: block; clear: both; }
 
-.sc-board .btn-tab { float: left; padding-right: 33px; font-size: 22px; color: #a3a3a3; text-transform: uppercase; }
+.sc-board .btn-tab { float: left; padding: 0 33px 20px 0; line-height: normal; font-size: 22px; color: #a3a3a3; text-transform: uppercase; }
 
 .sc-board .btn-tab.active { color: #000; }
 
-.sc-board .link-more { float: right; position: relative; padding: 10px; -webkit-box-sizing: content-box; box-sizing: content-box; }
+.sc-board .link-more { float: right; position: relative; padding: 10px; -webkit-box-sizing: content-box; box-sizing: content-box; margin-right: -10px; }
 
 .sc-board .link-more::after { content: ''; display: inline-block; width: 13px; height: 13px; background: url("../images/bg/sp-bg3.png") no-repeat -200px 0; }
 
