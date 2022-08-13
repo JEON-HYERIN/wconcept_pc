@@ -1,8 +1,5 @@
 * {
   box-sizing: border-box;
-  outline: none;
-  font-weight: normal;
-  font-style: normal;
 }
 
 html {
@@ -22,8 +19,11 @@ iframe {
 }
 
 #wrapper {
-  overflow: hidden;
   min-width: 1240px;
+}
+
+section {
+  overflow: hidden;
 }
 
 /* skip-nav */
@@ -75,6 +75,14 @@ div[class*="inner"] {
 
 .common-inner {
   width: 1880px;
+
+  @include large {
+    width: 1560px;
+  }
+
+  @include small {
+    width: 1240px;
+  }
 }
 
 .title,
@@ -105,6 +113,11 @@ div[class*="inner"] {
   margin-bottom: 50px;
   width: 216px;
   margin-right: 22px;
+
+  &:nth-child(7n),
+  &:nth-child(8n) {
+    margin-right: 21px;
+  }
 }
 
 .product-area {
@@ -118,6 +131,10 @@ div[class*="inner"] {
     overflow: hidden;
     background: url("../images/banner/onerror_img_product.png") no-repeat center/100%;
     height: 260px;
+
+    @include large {
+      height: 240px;
+    }
 
     img {
       display: block;
@@ -136,7 +153,6 @@ div[class*="inner"] {
   .brand {
     @include ellipse;
     font-size: 14px;
-    line-height: normal;
     margin-bottom: 7px;
     font-family: "NotoSansKR-Medium";
     max-height: 28px;
@@ -167,7 +183,6 @@ div[class*="inner"] {
   .desc {
     font-family: "ProximaNova-Regular";
     position: relative;
-    line-height: normal;
     margin-bottom: 14px;
 
     &::after {

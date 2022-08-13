@@ -1,5 +1,79 @@
+#header,
+.sticky-nav {
+  .logo-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 40px;
+  }
+
+  .logo {
+    a {
+      display: block;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 172px;
+        height: 65px;
+
+        background: {
+          repeat: no-repeat;
+          position: center;
+          size: contain;
+        }
+
+        vertical-align: top;
+      }
+    }
+  }
+
+  .util-area {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    margin-right: 60px;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .link-util {
+    float: left;
+    width: 70px;
+    height: 65px;
+    padding: 12px 0;
+    font-family: "ProximaNova-Regular", "Noto Sans KR";
+    text-transform: uppercase;
+    text-align: center;
+
+    i[class^="ico-"] {
+      display: block;
+      margin: 0 auto 5px;
+    }
+  }
+}
+
 // header
 #header {
+
+  .logo-area,
+  .util-area {
+    display: block;
+  }
+
+  &.static {
+
+    .logo-area,
+    .util-area {
+      display: none;
+    }
+  }
+
   .group-flex {
     position: relative;
     width: 100%;
@@ -23,7 +97,7 @@
         display: inline-block;
         width: 172px;
         height: 65px;
-        background: url("../images/content/logo.png") no-repeat center;
+        background-image: url("../images/content/logo.png");
         vertical-align: top;
       }
     }
@@ -38,8 +112,6 @@
     width: 420px;
     border-bottom: 2px solid #000;
   }
-
-  .search {}
 
   .input-search {
     width: 90%;
@@ -80,6 +152,10 @@
     width: auto;
     margin-right: 60px;
 
+    @include medium {
+      margin-right: 30px;
+    }
+
     &::after {
       content: '';
       display: block;
@@ -117,11 +193,100 @@
 }
 
 .sticky-nav {
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   min-width: 1280px;
   background: #0b0b0d;
   z-index: 10;
+
+  .logo-area,
+  .util-area {
+    transition: all .2s ease-in-out;
+    display: none;
+  }
+
+  .logo-area {
+    @include medium {
+      margin-left: 2.5vw;
+    }
+
+    @include xxsmall {
+      margin-left: 32px;
+    }
+  }
+
+  .logo {
+    a {
+      &::before {
+        background-image: url("../images/content/logo_w.png");
+
+        @include medium {
+          width: 10.75vw;
+        }
+
+        @include xsmall {
+          width: 150px;
+        }
+      }
+
+      @include medium {
+        line-height: 68px;
+      }
+    }
+  }
+
+  .util-area {
+    @include medium {
+      margin-right: 1.875vw;
+    }
+
+    @include xxsmall {
+      margin-right: 27px;
+    }
+  }
+
+  .link-util {
+    color: #fff;
+
+    @include medium {
+      width: 4.375vw;
+      font-size: .75vw;
+    }
+
+    @include xsmall {
+      font-size: 10.5px;
+    }
+
+    @include xxsmall {
+      width: 56px;
+    }
+
+    i[class^="ico-"] {
+      @include medium {
+        width: 1.56vw;
+      }
+
+      @include xsmall {
+        width: 22px;
+      }
+    }
+
+    .ico-search {
+      position: relative;
+      top: 4px;
+      background-image: url("../images/icon/ico_search_w.png");
+    }
+
+    .ico-mypage {
+      background-image: url("../images/icon/ico_mypage_w.png");
+    }
+
+    .ico-cart {
+      background-image: url("../images/icon/ico_cart_w.png");
+    }
+  }
 }
 
 #gnb {
@@ -137,10 +302,6 @@
 
     &:nth-child(1) {
       padding-right: 25px;
-    }
-
-    &:nth-child(2) {
-      padding-left: 30px;
     }
 
     &+.gnb-list::before {
@@ -163,6 +324,24 @@
 
   .gnb-item {
     float: left;
+
+    &:first-child {
+      .link-gnb {
+        padding-left: 50px;
+
+        @include large {
+          padding-left: 2.083vw;
+        }
+
+        @include medium {
+          padding-left: 3vw;
+        }
+
+        @include xxsmall {
+          padding-left: 38.5px;
+        }
+      }
+    }
   }
 
   .link-gnb {
@@ -176,6 +355,23 @@
 
     &:hover {
       color: #04bd9e;
+    }
+
+    @include large {
+      padding: 29px 0.989vw;
+    }
+
+    @include medium {
+      padding: 29px 1vw;
+      font-size: .875vw;
+    }
+
+    @include xsmall {
+      font-size: 12px;
+    }
+
+    @include xxsmall {
+      padding: 29px 13px;
     }
   }
 }
