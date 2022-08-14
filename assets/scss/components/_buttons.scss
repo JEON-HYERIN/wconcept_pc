@@ -1,6 +1,8 @@
-.swiper {
+main {
   .swiper-pagination {
-    bottom: 20px;
+    &.swiper-pagination-bullets {
+      bottom: 20px;
+    }
 
     &-bullet {
       margin: 0 3px !important;
@@ -14,7 +16,7 @@
       }
     }
   }
-  &-button-disabled {
+  .swiper-button-disabled {
     opacity: .5;
     cursor: default;
   }

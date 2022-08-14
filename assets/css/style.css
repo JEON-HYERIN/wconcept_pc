@@ -376,13 +376,13 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 #footer .service-area .link-foot { font-size: 11px; margin-left: 5px; margin-top: -2px; }
 
-.swiper .swiper-pagination { bottom: 20px; }
+main .swiper-pagination.swiper-pagination-bullets { bottom: 20px; }
 
-.swiper .swiper-pagination-bullet { margin: 0 3px !important; width: 10px; height: 10px; background-color: #000; opacity: .4; }
+main .swiper-pagination-bullet { margin: 0 3px !important; width: 10px; height: 10px; background-color: #000; opacity: .4; }
 
-.swiper .swiper-pagination-bullet-active { opacity: 1; }
+main .swiper-pagination-bullet-active { opacity: 1; }
 
-.swiper-button-disabled { opacity: .5; cursor: default; }
+main .swiper-button-disabled { opacity: .5; cursor: default; }
 
 .btn-nav { position: absolute; top: 50%; width: 70px; height: 96px; -webkit-transform: translateY(-50%); transform: translateY(-50%); padding: 20px; z-index: 1; }
 
