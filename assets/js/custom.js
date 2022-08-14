@@ -1,4 +1,12 @@
 $(function(){
+  // gnb
+  $('.gnb-item').mouseenter(function(){
+    $(this).children('.lnb-list-wrap').stop().fadeIn(300);
+  });
+  $('.gnb-item').mouseleave(function(){
+    $(this).children('.lnb-list-wrap').stop().fadeOut(300);
+  });
+
   // visual
   const visualSwiper = new Swiper('.sc-visual .swiper', {
     autoplay: true,
@@ -164,12 +172,14 @@ $(function(){
     const stickyNav = $('.sticky-nav').offset().top;
     if (currentScroll >= stickyNav) {
       $('#header').addClass('static');
+      $('.sticky-nav').addClass('fixed');
       gsap.to('.sticky-nav .logo-area, .sticky-nav .util-area', {
         display: 'block',
         duration: 0,
       }) 
     } else {
       $('#header').removeClass('static');
+      $('.sticky-nav').removeClass('fixed');
       gsap.to('.sticky-nav .logo-area, .sticky-nav .util-area', {
         display: 'none',
         duration: 0,
