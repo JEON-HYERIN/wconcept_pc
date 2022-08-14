@@ -1,9 +1,9 @@
 .swiper {
-  &-pagination {
+  .swiper-pagination {
     bottom: 20px;
 
     &-bullet {
-      margin: 0 3px;
+      margin: 0 3px !important;
       width: 10px;
       height: 10px;
       background-color: #000;

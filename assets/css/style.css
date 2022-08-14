@@ -376,11 +376,11 @@ body { -webkit-font-smoothing: antialiased; font-family: "ProximaNova-Light", "N
 
 #footer .service-area .link-foot { font-size: 11px; margin-left: 5px; margin-top: -2px; }
 
-.swiper-pagination { bottom: 20px; }
+.swiper .swiper-pagination { bottom: 20px; }
 
-.swiper-pagination-bullet { margin: 0 3px; width: 10px; height: 10px; background-color: #000; opacity: .4; }
+.swiper .swiper-pagination-bullet { margin: 0 3px !important; width: 10px; height: 10px; background-color: #000; opacity: .4; }
 
-.swiper-pagination-bullet-active { opacity: 1; }
+.swiper .swiper-pagination-bullet-active { opacity: 1; }
 
 .swiper-button-disabled { opacity: .5; cursor: default; }
 
