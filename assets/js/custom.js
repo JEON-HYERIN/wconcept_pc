@@ -23,9 +23,7 @@ $(function(){
 
   // whatsnew
   const whatsnewSwiper = new Swiper('.sc-whatsnew .swiper', {
-    autoplay: {
-      delay: 5000,
-    },
+    autoplay: true,
     navigation: {
       prevEl: '.sc-whatsnew .btn-prev',
       nextEl: '.sc-whatsnew .btn-next',
