@@ -944,9 +944,9 @@ main .swiper-button-disabled { opacity: .5; cursor: default; }
 
 .quick-menu .btn-bottom .ico-arrow-down { background-image: url("../images/icon/ico_arrow_down.png"); }
 
-.page-load { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.6); z-index: 100; }
+.page-load { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.6); z-index: 200; }
 
-.page-load .title-box { font-size: 18px; color: #fff; position: absolute; top: 27%; left: 19%; text-align: center; -webkit-animation: arrow-move 1.2s linear infinite; animation: arrow-move 1.2s linear infinite; }
+.page-load .title-box { font-size: 18px; color: #fff; position: absolute; top: 235px; left: 19%; text-align: center; -webkit-animation: arrow-move 1.2s linear infinite; animation: arrow-move 1.2s linear infinite; }
 
 .page-load .title-box i[class^="fa-"] { font-size: 20px; margin-bottom: 7px; }
 
