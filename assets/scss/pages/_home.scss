@@ -1543,3 +1543,43 @@
     }
   }
 }
+
+// page-load
+.page-load {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 100;
+
+  .title-box {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 19%;
+    text-align: center;
+    animation: arrow-move 1.2s linear infinite;
+
+    i[class^="fa-"] {
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
