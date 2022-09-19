@@ -14,7 +14,10 @@ $(function(){
 
   // visual
   const visualSwiper = new Swiper('.sc-visual .swiper', {
-    autoplay: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     loop: true,
     pagination: {
       el: '.sc-visual .swiper-pagination',
@@ -28,7 +31,10 @@ $(function(){
 
   // whatsnew
   const whatsnewSwiper = new Swiper('.sc-whatsnew .swiper', {
-    autoplay: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
       prevEl: '.sc-whatsnew .btn-prev',
       nextEl: '.sc-whatsnew .btn-next',
@@ -75,7 +81,11 @@ $(function(){
 
   // beautypick
   const beautypickSwiper = new Swiper('.sc-beautypick .swiper', {
-    autoplay: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 500,
     loop: true,
     pagination: {
       el: '.sc-beautypick .swiper-pagination',
